@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>Wedding Invitation | Chaitanya & Sravani ❤️</title>
+
+<meta name="description" content="Wedding invitation for Krishna Chaitanya and Sravani">
+
+<meta name="theme-color" content="#180b18">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background:
+        radial-gradient(circle at 20% 10%, rgba(255,111,145,.28), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(255,197,222,.18), transparent 28%),
+        linear-gradient(135deg, #180b18, #3a102b 55%, #120914);
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    width: min(1000px, 92%);
+    margin-inline: auto;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 60px 18px;
+    position: relative;
+    isolation: isolate;
+}
+
+.hero .container {
+    width: 100%;
+    max-width: 900px;
+}
+
+.hero-label {
+    font-size: clamp(12px, 2.5vw, 18px);
+    letter-spacing: clamp(2px, 0.8vw, 4px);
+    opacity: .85;
+    line-height: 1.8;
+}
+
+.h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(55px, 12vw, 135px);
+    line-height: 1.3;
+    color: #ffd1e0;
+    text-shadow: 0 0 28px rgba(255,120,170,.45);
+    overflow-wrap: anywhere;
+}
+
+.subtitle {
+    font-size: clamp(14px, 2.5vw, 27px);
+    line-height: 1.8;
+    margin: 18px auto 14px;
+    max-width: 760px;
+}
+
+.age {
+    font-size: clamp(14px, 2.5vw, 18px);
+    opacity: .9;
+    margin-top: 12px;
+}
+
+/* Buttons */
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.btn {
+    border: none;
+    border-radius: 999px;
+    padding: 15px 25px;
+    min-height: 48px;
+    min-width: 145px;
+    background: linear-gradient(90deg, #ff5d91, #ff9fc0);
+    color: white;
+    font: 600 15px 'Poppins', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(255,73,133,.28);
+    transition: transform .3s, box-shadow .3s;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255,73,133,.4);
+}
+
+.btn:focus-visible,
+.map-btn:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 4px;
+}
+
+/* Cards */
+
+.card {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 30px;
+    padding: clamp(20px, 4vw, 34px);
+    margin: 30px 0;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 20px 60px rgba(0,0,0,.22);
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.message {
+    font-size: clamp(15px, 2.5vw, 25px);
+    line-height: 1.9;
+    text-align: center;
+}
+
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(29px, 6vw, 48px);
+    line-height: 1.5;
+    text-align: center;
+    color: #ffc1d8;
+    margin-top: 22px;
+    overflow-wrap: anywhere;
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 24px;
+    aspect-ratio: 3 / 4;
+    border: 2px solid rgba(255,255,255,.18);
+    box-shadow: 0 14px 35px rgba(0,0,0,.3);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .7s;
+}
+
+@media (hover: hover) {
+    .photo:hover img {
+        transform: scale(1.06);
+    }
+}
+
+/* Music */
+
+.music {
+    text-align: center;
+}
+
+.music small {
+    opacity: .72;
+    display: block;
+    margin-top: 10px;
+}
+
+.player {
+    width: 0;
+    height: 0;
+    border: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+/* Venue Details */
+
+.venue-card {
+    text-align: center;
+    scroll-margin-top: 20px;
+}
+
+.venue-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(38px, 8vw, 65px);
+    line-height: 1.35;
+    color: #ffd1a3;
+    margin-bottom: 20px;
+}
+
+.venue-info {
+    font-size: clamp(14px, 2.3vw, 17px);
+    line-height: 2;
+    margin-bottom: 15px;
+    overflow-wrap: anywhere;
+}
+
+.couple-name {
+    display: inline-block;
+    font-size: clamp(17px, 4vw, 22px);
+    color: #ffd1a3;
+    line-height: 1.6;
+}
+
+.venue-icon {
+    font-size: clamp(40px, 8vw, 55px);
+    margin-bottom: 12px;
+}
+
+.map-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 15px 24px;
+    min-height: 48px;
+    max-width: 100%;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #c58b35, #ffe0a0);
+    color: #35152a;
+    font: 600 15px 'Poppins', sans-serif;
+    box-shadow: 0 10px 30px rgba(255,215,120,.2);
+    transition: transform .3s;
+    touch-action: manipulation;
+}
+
+.map-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Floating Hearts */
+
+.heart {
+    position: fixed;
+    font-size: clamp(15px, 4vw, 25px);
+    opacity: .6;
+    pointer-events: none;
+    z-index: -1;
+    animation: float 7s infinite ease-in-out;
+}
+
+.heart1 {
+    left: 5%;
+    top: 18%;
+}
+
+.heart2 {
+    right: 5%;
+    top: 30%;
+    animation-delay: 1.5s;
+}
+
+.heart3 {
+    left: 7%;
+    bottom: 22%;
+    animation-delay: 3s;
+}
+
+.heart4 {
+    right: 7%;
+    bottom: 15%;
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(8deg);
+    }
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 45px 18px 55px;
+    opacity: .85;
+    font-size: clamp(12px, 2.5vw, 15px);
+    line-height: 1.9;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .card {
+        border-radius: 24px;
+        margin: 22px 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .photo {
+        border-radius: 18px;
+    }
+}
+
+/* Mobile Phones */
+
+@media (max-width: 480px) {
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 40px 16px;
+    }
+
+    .hero-label {
+        letter-spacing: 2px;
+    }
+
+    .h1 {
+        font-size: clamp(50px, 15vw, 75px);
+        line-height: 1.35;
+        margin-top: 8px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+        line-height: 1.85;
+        margin-top: 15px;
+    }
+
+    .age {
+        font-size: 14px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        margin-top: 22px;
+    }
+
+    .btn {
+        width: min(100%, 280px);
+        min-height: 50px;
+        margin: 0;
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 21px 17px;
+        border-radius: 22px;
+        margin: 20px 0;
+    }
+
+    .message {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .signature {
+        font-size: clamp(28px, 8vw, 38px);
+        margin-top: 18px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .photo {
+        aspect-ratio: 4 / 5;
+        border-radius: 18px;
+    }
+
+    .venue-title {
+        font-size: 43px;
+        margin-bottom: 16px;
+    }
+
+    .venue-info {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .couple-name {
+        font-size: 18px;
+    }
+
+    .venue-icon {
+        font-size: 42px;
+    }
+
+    .map-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 18px;
+        font-size: 14px;
+    }
+
+    .heart {
+        font-size: 17px;
+        opacity: .45;
+    }
+
+    footer {
+        padding: 35px 18px 45px;
+        font-size: 12px;
+    }
+}
+
+/* Very Small Phones */
+
+@media (max-width: 350px) {
+    .hero {
+        padding-inline: 12px;
+    }
+
+    .h1 {
+        font-size: 47px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 18px 13px;
+    }
+
+    .message {
+        font-size: 14px;
+    }
+
+    .signature {
+        font-size: 27px;
+    }
+
+    .venue-title {
+        font-size: 37px;
+    }
+
+    .heart {
+        font-size: 14px;
+    }
+}
+
+/* Accessibility: Reduce Motion */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+
+<div class="heart heart1" aria-hidden="true">❤️💗</div>
+<div class="heart heart2" aria-hidden="true">💗💕</div>
+<div class="heart heart3" aria-hidden="true">💕💖</div>
+<div class="heart heart4" aria-hidden="true">💖❤️</div>
+
+<!-- Wedding Invitation Hero Section -->
+
+<section class="hero">
+    <div class="container">
+
+        <div class="hero-label">
+            CHAITANYA SRAVANI
+        </div>
+
+        <h1 class="h1">Invitation</h1>
+
+        <div class="subtitle">
+            Hand in hand, heart to heart, a beautiful forever is about to start.
+            Join us to celebrate love, laughter, and happily ever after💕❤️
+        </div>
+
+        <div class="age">
+            15-11-2026 ✨
+        </div>
+
+        <!-- Invitation and Venue Buttons -->
+
+        <div class="button-group">
+
+            <button
+                class="btn"
+                type="button"
+                onclick="document.getElementById('invitation-details').scrollIntoView({ behavior: 'smooth' })">
+                💝 Invitation
+            </button>
+
+            <button
+                class="btn"
+                type="button"
+                onclick="document.getElementById('venue-details').scrollIntoView({ behavior: 'smooth' })">
+                📍 Venue
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Wedding Invitation Message -->
+
+<section class="container" id="invitation-details">
+
+    <div class="card">
+
+        <div class="message">
+
+            💐💍 Wedding Invitation 💍💐 ❤️
+
+            <br><br>
+
+            My Dear Family &amp; Dearest Friends! ✨
+
+            <br><br>
+
+            We warmly invite you to join us in celebrating this wonderful occasion filled with love, laughter, and happiness.
+
+            <br><br>
+
+            Please join us and bless the couple as they begin their beautiful journey of togetherness. 💑
+
+            <br><br>
+
+            Your presence is our pleasure, and your blessings are our treasure! ❤️🙏
+
+            <br><br>
+
+            With love 💑
+
+        </div>
+
+        <div class="signature">
+            Krishna Chaitanya 💕 Sravani
+        </div>
+
+    </div>
+
+    <!-- Wedding Venue Details -->
+
+    <div class="card venue-card" id="venue-details">
+
+        <div class="venue-icon" aria-hidden="true">📍</div>
+
+        <h2 class="venue-title">
+            Wedding Venue
+        </h2>
+
+        <div class="venue-info">
+
+            <strong class="couple-name">
+                Krishna Chaitanya &amp; Sravani
+            </strong>
+
+            <br><br>
+
+            💒 <strong>Venue:</strong> Ponnamanda
+
+            <br>
+
+            📅 <strong>Date:</strong> 15 November 2026
+
+            <br>
+
+            🕰️ <strong>Wedding Venue &amp; Time:</strong>
+            Veemavaram, Achanta @10:11 PM
+
+            <br><br>
+
+            We cordially invite you to join us on our special day.
+            Your presence and blessings will make our celebration more memorable. ❤️🙏
+
+        </div>
+
+        <!-- Google Maps Button -->
+
+        <a
+            class="map-btn"
+            href="https://maps.app.goo.gl/ASMjiYV1WkEMCvvcA?g_st=aw"
+            target="_blank"
+            rel="noopener noreferrer">
+            🗺️ Get Directions
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+    Made with ❤️ With Warm Regards & Love Krishna Chaitanya &amp; Sravani
+    <br>
+    Wedding Day | 15 November 2026 🙏
+</footer>
+
+</body>
+</html>
